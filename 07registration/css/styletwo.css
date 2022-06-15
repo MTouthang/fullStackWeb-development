@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@200;700&family=Poppins:wght@100;200;300;400;500&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    background-color: rgb(89, 182, 169);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 100%;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog{
+    position: absolute;
+    height: 600px;
+    border-bottom-right-radius: 10%;
+    z-index: -1;
+    top: 0;
+    left:0;
+}
+
+.mockup{
+    height: 800px;
+}
+
+.form{
+    width: 100%;
+   
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.form-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 75%;
+}
+.form-section h1 {
+    font-size: 40px;
+    margin: 25px 0;
+    color: #343333;
+    text-transform: capitalize;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #a7a7aa;
+    margin-bottom: 15px;
+    width: 90%;
+    margin: 5px 5px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f59e2e;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 10px
+    
+}
+
+.btn:hover{
+    background-color: #000;
+}
+
+.btn-facebook{
+    background-color: #354c8d;
+}
+.btn-twitter{
+    background-color: #009fe9;
+}
+
+@media  screen and (max-width: 600px){
+    .form-section{
+        padding: 20px 30px
+    }
+    .row{
+        flex-direction: column;
+    }
+    .mockup{
+        display: none;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+}
